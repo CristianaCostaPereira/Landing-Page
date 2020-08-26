@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Libre+Baskerville&display=swap');
+@import "https://use.fontawesome.com/releases/v5.14.0/css/all.css";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 80px;
+    background-color:#101935;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 650px;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.logo {
+    text-align: center;
+    padding-left: 50px;
+    color: #f1f1f1;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-size: 25px;
+    margin-right: auto;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;    
+    width: 32%;
+}
+
+/*to remove the dots from li*/
+.links li {
+    list-style: none;
+}
+
+.links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    border: 3px solid transparent;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/*Disappear the icon while in full screen, for only appear in mobile screen*/
+.bars-icon {
+    display: none;
+    color: #f1f1f1;
+    font-size: 11px;
+    margin: 5px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 22px;
+    cursor: pointer;
+}
+
+a.active,a:hover {
+    border: 1px solid #f1f1f1;
+    transition: 0.3s;
+    color: #00B4D8;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .links {
+        position: inherit;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color:#101935;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-out;
+        opacity: 0.8;
+    }
+
+    .links li {
+        opacity: 0;
+    }
+
+    .bars-icon {
+        display: block;
+    }
+}
+
+/*To appear the menu when the icon is clicked */
+.nav-active {
+    transform: translatex(0%);
+}
+
+@keyframes linksFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
