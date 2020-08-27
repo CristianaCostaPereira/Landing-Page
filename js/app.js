@@ -9,7 +9,7 @@ const navbar = () => {
     let current = [];
 
     window.addEventListener("scroll", (event) => {
-        let fromTop = window.scrollY + 80;
+        let fromTop = window.scrollY + 80; // + 80 is the height of my navbar
 
         mainNavLinks.forEach(link => {
           let section = document.querySelector(link.hash);
