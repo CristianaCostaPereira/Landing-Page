@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Italianno&family=Lovers+Quarrel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 @import "https://use.fontawesome.com/releases/v5.14.0/css/all.css";
 
 * {
@@ -46,10 +47,11 @@ main section h1 {
 
 main section p {
     font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
     padding: 30px;
     border-radius: 20px;
     background-color: rgb(240 255 255 / 80%);
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 .logo {
