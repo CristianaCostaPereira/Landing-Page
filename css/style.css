@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Italianno&family=Lovers+Quarrel&display=swap');
 @import "https://use.fontawesome.com/releases/v5.14.0/css/all.css";
 
 * {
@@ -20,35 +21,52 @@ nav {
     min-height: 8vh;
     font-family: 'Libre Baskerville', serif;
     line-height: 80px;
-    background-color:#101935;
+    background-color: #4c3e3e;
 }
 
 section {
     padding-top: 100px;
     padding-bottom: 650px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 main {
     padding-top: 80px;
 }
 
+main section h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Charm', cursive;
+    color: #423535;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+
 main section p {
-    background-color: rgb(240 255 255 / 51%);
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(240 255 255 / 80%);
+    line-height: 1.6;
 }
 
 .logo {
+    font-size: 25px;
     text-align: center;
-    padding-left: 50px;
-    color: #f1f1f1;
+    text-decoration: underline;
     text-transform: capitalize;
     letter-spacing: 3px;
-    font-size: 25px;
+    color: #fffee4;
+    padding-left: 50px;
     margin-right: auto;
 }
 
 .links {
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;
+    font-family: 'Libre Baskerville', serif;
     width: 32%;
 }
 
@@ -61,9 +79,9 @@ main section p {
     color: #f1f1f1;
     text-decoration: none;
     border: 3px solid transparent;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 /*Disappear the icon while in full screen, for only appear in mobile screen*/
@@ -81,7 +99,18 @@ main section p {
 a.active,a:hover {
     border: 1px solid #f1f1f1;
     transition: 0.3s;
-    color: #00B4D8;
+    color: #fffee4;
+    padding: 10px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: rgb(240 255 255 / 45%);
 }
 
 @media screen and (max-width: 800px) {
@@ -93,8 +122,8 @@ a.active,a:hover {
         position: inherit;
         right: 0px;
         height: 92vh;
-        top: 8vh;
-        background-color:#101935;
+        top: 10vh;
+        background-color:#4c3e3e;
         display: flex;
         flex-direction: column;
         align-items: center;
