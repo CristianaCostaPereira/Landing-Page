@@ -1,12 +1,11 @@
+## Landing Page
 
-## Table of Contents
+This project intention is to aplly the aquired knowledge during the Udacity course and the main focus is on JavaScript.
+Overall, it has a dinamic navbar that reacts to scroll position.
+When clicked, the links in the navbar jumps to the corresponding section based on its id.
 
-* [Instructions](#instructions)
-
-## Instructions
-
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
-
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+The project has the following event handlers:
+- an onScroll event that applies a CSS class to my li elements depending on its distance to the top, showing wich one is active;
+- click event on the burger icon to toggle the side menu visibility;
+- click event on the body, excluding the sidebar itself, to hide it to improve user experience;
+- click on the sidebar to stop propagation so it will not trigger the body click event handler so it will not close when you click the sidebar itself
