@@ -1,6 +1,6 @@
 ## Landing Page
 
-This project intention is to aplly the aquired knowledge during the **<ins>Udacity</ins>** course and the main focus is on **JavaScript**.
+This project intention is to aplly the aquired knowledge during the **<ins>Udacity</ins>** course and the main focus is on **JavaScript**.<br>
 Overall, it has a dinamic navbar that reacts to scroll position.
 When clicked, the links in the navbar jumps to the corresponding section based on its id.
 
